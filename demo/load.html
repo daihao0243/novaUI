@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>load</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/load.css" />
+</head>
+
+<body>
+    <div class="nv-load nv-inline">
+            <div class="nv-loop nv-loading">
+                <div class="nv-load-left">
+                    <div class="nv-load-loop"></div>
+                </div>
+                <div class="nv-load-right">
+                    <div class="nv-load-loop"></div>
+                </div>
+            </div>
+            <p>载入中...</p>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../plugins/jquery.load.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $(".nv-load").novaLoad({
+                size: "40",
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
